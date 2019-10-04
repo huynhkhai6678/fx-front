@@ -1,0 +1,219 @@
+<header class="page-head" [ngClass]="fixed?'header-panel-absolute':''">
+    <!-- RD Navbar Transparent-->
+    <div class="rd-navbar-wrap">
+        <nav data-stick-up-offset="210" data-xl-stick-up-offset="85" [ngClass]="fixed?'rd-navbar-fixed rd-navbar-humburger-menu':'rd-navbar-static rd-navbar-default'" class="rd-navbar" data-lg-auto-height="true" data-lg-stick-up="true">
+            <div class="rd-navbar-inner">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                    <!-- RD Navbar Toggle-->
+                    <button data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
+                    <h4 class="panel-title veil-md">Pages</h4>
+                    <!-- RD Navbar Right Side Toggle-->
+                    <button data-rd-navbar-toggle=".rd-navbar-top-panel" class="rd-navbar-top-panel-toggle veil-md"><span></span></button>
+                    <div class="rd-navbar-top-panel">
+                        <div class="rd-navbar-top-panel-left-part">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="unit unit-horizontal unit-middle unit-spacing-xs">
+                                        <div class="unit-left"><span class="icon mdi mdi-phone text-middle"></span></div>
+                                        <div class="unit-body"><a href="callto:#">1-800-1234-567,</a> <a href="callto:#" class="reveal-block reveal-md-inline-block">1-800-6547-321</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit unit-horizontal unit-middle unit-spacing-xs">
+                                        <div class="unit-left"><span class="icon mdi mdi-map-marker text-middle"></span></div>
+                                        <div class="unit-body"><a href="#">2130 Fulton Street San Diego, CA 94117-1080 USA</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit unit-horizontal unit-middle unit-spacing-xs">
+                                        <div class="unit-left"><span class="icon mdi mdi-email-open text-middle"></span></div>
+                                        <div class="unit-body"><a href="mailto:#">info@demolink.org</a></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rd-navbar-top-panel-right-part">
+                            <div class="rd-navbar-top-panel-left-part">
+                                <div class="unit unit-horizontal unit-middle unit-spacing-xs">
+                                    <div class="unit-left"><span class="icon mdi mdi-login text-middle"></span></div>
+                                    <div class="unit-body"><a href="/#/login">Login/Register</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rd-navbar-menu-wrap clearfix">
+                    <!--Navbar Brand-->
+                    <div class="rd-navbar-brand"><a href="index.html" class="reveal-inline-block">
+                        <div class="unit unit-xs-middle unit-xl unit-xl-horizontal unit-spacing-xxs">
+                            <div class="unit-left"><img width='89' height='89' src='./assets/images/logo-170x172.png' alt=''/></div>
+                            <div class="unit-body text-xl-left">
+                                <div class="rd-navbar-brand-title">Good Food</div>
+                                <div class="rd-navbar-brand-slogan text-italic">Recipes</div>
+                            </div>
+                        </div>
+                    </a></div>
+                    <div class="rd-navbar-nav-wrap">
+                        <div class="rd-navbar-mobile-scroll">
+                            <div class="rd-navbar-mobile-header-wrap">
+                                <!--Navbar Brand Mobile-->
+                                <div class="rd-navbar-mobile-brand"><a href="/#/dashboard"><img width='89' height='89' src='./assets/images/logo-170x172.png' alt=''/></a></div>
+                            </div>
+                            <!-- RD Navbar Nav-->
+                            <ul class="rd-navbar-nav">
+                                <li><a href="/#/dashboard">Home</a>
+                                </li>
+
+                                <li routerLinkActive="active" [routerLink]="'/privacy'"><a href="/#/privacy">Terms of Use</a></li>
+                                <li routerLinkActive="active" [routerLink]="'/login'"><a href="/#/login">Login/Register</a></li>
+                                <li class=""><a href="#">Pages</a>
+                                    <div class="rd-navbar-megamenu">
+                                        <div class="row section-relative">
+                                            <ul [ngClass]="fixed?'col-md-12':'col-md-4'">
+                                                <li>
+                                                    <h6>Pages</h6>
+                                                    <ul class="list-unstyled offset-lg-top-20">
+                                                        <li><a href="/#/privacy">Terms of Use</a></li>
+                                                        <li><a href="/#/login">Login/Register</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">News</a>
+                                    <ul class="rd-navbar-dropdown">
+                                        <li><a href="classic-news.html">Classic news</a>
+                                        </li>
+                                        <li><a href="grid-news.html">Grid News</a>
+                                        </li>
+                                        <li><a href="masonry-news.html">Masonry News</a>
+                                        </li>
+                                        <li><a href="grid-news-3-columns.html">3 Columns Grid News</a>
+                                        </li>
+                                        <li><a href="modern-news.html">Modern News</a>
+                                        </li>
+                                        <li><a href="news-post-page.html">News Post Page</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Recipes</a>
+                                    <ul class="rd-navbar-dropdown">
+                                        <li><a href="recipes.html">Recipes</a>
+                                        </li>
+                                        <li><a href="recipes-single.html">Single Recipe</a>
+                                        </li>
+                                        <li><a href="grid-gallery.html">Grid Gallery</a>
+                                        </li>
+                                        <li><a href="grid-without-padding-gallery.html">Grid Without Padding Gallery</a>
+                                        </li>
+                                        <li><a href="masonry-gallery.html">Masonry Gallery</a>
+                                        </li>
+                                        <li><a href="cobbles-gallery.html">Cobbles Gallery</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Shop</a>
+                                    <ul class="rd-navbar-dropdown">
+                                        <li><a href="product-catalog.html">Product Catalog</a>
+                                        </li>
+                                        <li><a href="single-product.html">Single Product</a>
+                                        </li>
+                                        <li><a href="shopping-cart.html">Shopping Cart</a>
+                                        </li>
+                                        <li><a href="checkout.html">Checkout</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="donate.html">Donate</a>
+                                    <ul class="rd-navbar-dropdown">
+                                        <li><a href="how-to-plus.html">How To</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="contacts.html">Contacts</a>
+                                </li>
+                                <li [ngClass]="fixed?'':'veil-md'"><a href="shopping-cart.html">Shopping Cart (2)</a></li>
+                            </ul>
+                            <!--RD Navbar Mobile Search-->
+                            <div id="rd-navbar-search-mobile" class="rd-navbar-search-mobile">
+                                <form action="search-results.html" method="GET" class="rd-navbar-search-form search-form-icon-right rd-search">
+                                    <div class="form-group">
+                                        <label for="rd-navbar-mobile-search-form-input" class="form-label">Search...</label>
+                                        <input id="rd-navbar-mobile-search-form-input" type="text" name="s" autocomplete="off" class="rd-navbar-search-form-input form-control form-control-gray-lightest"/>
+                                    </div>
+                                    <button type="submit" class="icon fa-search rd-navbar-search-button"></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!--RD Navbar Search-->
+                    <div *ngIf="!fixed" class="rd-navbar-search"><a data-rd-navbar-toggle=".rd-navbar-search" href="#" class="rd-navbar-search-toggle mdi"><span></span></a>
+                        <form action="search-results.html" data-search-live="rd-search-results-live" method="GET" class="rd-navbar-search-form search-form-icon-right rd-search">
+                            <div class="form-group">
+                                <label for="rd-navbar-search-form-input" class="form-label">Search</label>
+                                <input id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off" class="rd-navbar-search-form-input form-control form-control-gray-lightest"/>
+                                <div id="rd-search-results-live" class="rd-search-results-live"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--RD Navbar shop-->
+                    <div *ngIf="!fixed" class="rd-navbar-cart"><span class="icon fa-shopping-cart"></span><a href="shopping-cart.html" class="inset-left-10">2</a></div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Logo & address-->
+    <section *ngIf="fixed" class="section-32 position-absolute veil reveal-md-block">
+        <div class="shell-wide">
+            <div class="range range-sm-justify range-sm-middle">
+                <div class="cell-md-4 cell-lg-3">
+                    <!--Navbar Brand-->
+                    <div class="rd-navbar-brand text-left"><a href="index.html" class="reveal-inline-block">
+                        <div class="unit unit-xs-middle unit-md unit-md-horizontal unit-spacing-xxs">
+                            <div class="unit-left">
+                                <img width='70' src='./assets/images/logo-170x172.png' alt=''/>
+                                <div class=" barnd-name text-bold">A Food Delivery Community</div>
+                            </div>
+                        </div>
+                    </a></div>
+                </div>
+                <div class="cell-md-7 cell-lg-5 cell-xl-4">
+                    <div class="range">
+                        <div class="cell-sm-6">
+                            <!-- <div class="unit unit-horizontal unit-top unit-spacing-xs text-left">
+                                <div class="unit-left"><span class="icon mdi mdi-map-marker text-middle text-base"></span></div>
+                                <div class="unit-body"><a href="#" class="text-base">2130 Fulton Street San Diego, CA 94117-1080 USA</a></div>
+                            </div> -->
+                            <input matInput class="form-control form-control-has-validation" placeholder="Search">
+                        </div>
+                        <div class="cell-sm-2">
+                            <div class="unit unit-horizontal unit-top unit-spacing-xs">
+                                    <div class="unit-left"><span class="icon mdi mdi-bell text-middle text-base"></span></div>
+                            </div>
+                        </div>
+                        <div class="cell-sm-2">
+                            <div class="unit unit-horizontal unit-top unit-spacing-xs">
+                                    <div class="unit-left" style="position: relative">
+                                        <span class="icon mdi mdi-cart-outline text-middle text-base"></span>
+                                        <span class="number-cart">1</span>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="cell-sm-2">
+                            <div class="unit unit-horizontal unit-top unit-spacing-xs">
+                                <div class="unit-left">
+                                    <img id="img" class="style-scope yt-img-shadow" alt="" height="32" width="32" src="https://yt3.ggpht.com/-dgaQi1XgCWg/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rfb5674yU-deVlplFx20ovhw3UtZQ/s88-c-k-c0xffffffff-no-rj-mo/photo.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</header>
+
